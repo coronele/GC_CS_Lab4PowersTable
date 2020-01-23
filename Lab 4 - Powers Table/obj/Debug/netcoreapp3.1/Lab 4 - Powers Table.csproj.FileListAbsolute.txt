@@ -1,0 +1,11 @@
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\bin\Debug\netcoreapp3.1\Lab 4 - Powers Table.exe
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\bin\Debug\netcoreapp3.1\Lab 4 - Powers Table.deps.json
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\bin\Debug\netcoreapp3.1\Lab 4 - Powers Table.runtimeconfig.json
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\bin\Debug\netcoreapp3.1\Lab 4 - Powers Table.runtimeconfig.dev.json
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\bin\Debug\netcoreapp3.1\Lab 4 - Powers Table.dll
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\bin\Debug\netcoreapp3.1\Lab 4 - Powers Table.pdb
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\obj\Debug\netcoreapp3.1\Lab 4 - Powers Table.csprojAssemblyReference.cache
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\obj\Debug\netcoreapp3.1\Lab 4 - Powers Table.AssemblyInfoInputs.cache
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\obj\Debug\netcoreapp3.1\Lab 4 - Powers Table.AssemblyInfo.cs
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\obj\Debug\netcoreapp3.1\Lab 4 - Powers Table.dll
+C:\Users\coronele\source\repos\Lab 4 - Powers Table\Lab 4 - Powers Table\obj\Debug\netcoreapp3.1\Lab 4 - Powers Table.pdb
