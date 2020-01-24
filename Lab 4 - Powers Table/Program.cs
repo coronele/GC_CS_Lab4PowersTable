@@ -6,9 +6,18 @@ namespace Lab_4___Powers_Table
     {
         static void Main(string[] args)
         {
+            string continueEntry = "y";
+
             ShowTitle();
-            int userInt = GetUserInt("Enter an integer for us to square/cube.\n");
-            ShowPowersTable(userInt);
+
+            do
+            {
+                int userInt = GetUserInt("We will need an integer to square/cube.\n");
+                ShowPowersTable(userInt);
+                continueEntry = TryAgain();
+            }
+            while (continueEntry == "y");
+
 
         }
         public static string GetUserInput(string message)
@@ -24,15 +33,16 @@ namespace Lab_4___Powers_Table
         {
             SetOutputColor();
             Console.WriteLine(message);
-            SetInputColor();
+            
             int input;
+            
             while (!(int.TryParse(message, out input)))
             {
                 SetOutputColor();
                 Console.Write("Please enter a valid integer: ");
+                SetInputColor();
                 message = Console.ReadLine();
             }
-            Console.WriteLine(input);
             return input;
         }
         public static void SetInputColor()
@@ -59,15 +69,27 @@ namespace Lab_4___Powers_Table
         {
             SetOutputColor();
 
-            string square, cube;
-            
-            for (int i=1; i <= UserInt; i++)
-            {
-                square = (i * i).ToString();
-                cube = (i * i * i).ToString();
-                Console.WriteLine($"{i}  {square}   {cube}");
-            }
+            // string square, cube;
 
+            Console.WriteLine("\n\n  {0:15}      {1,15}       {2,15}", "number", "square", "cube");
+            for (int i = 1; i <= UserInt; i++)
+            {
+                //square = (i * i).ToString();
+                //cube = (i * i * i).ToString();
+                //Console.WriteLine("      {0:15}      {1,15}       {2,15}", i.ToString(), square, cube);
+                Console.WriteLine("      {0:15}      {1,15}       {2,15}", i, i*i, i*i*i);
+            }
+            Console.WriteLine("\n\n");
+        }
+
+        public static string TryAgain()
+        {
+            string userChoice = GetUserInput("Would you like to run again? [y/n] ").ToLower();
+            while ((userChoice!="y") && (userChoice!="n"))
+            {
+                userChoice = GetUserInput("Please enter 'y' or 'n'.  Would you like to run again? [y/n] ");
+            }
+            return userChoice;
         }
     }
 }
