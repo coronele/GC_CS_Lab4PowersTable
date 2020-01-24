@@ -6,7 +6,7 @@ namespace Lab_4___Powers_Table
     {
         static void Main(string[] args)
         {
-            string continueEntry = "y";
+            string continueEntry;
 
             ShowTitle();
 
@@ -17,8 +17,6 @@ namespace Lab_4___Powers_Table
                 continueEntry = TryAgain();
             }
             while (continueEntry == "y");
-
-
         }
         public static string GetUserInput(string message)
         {
@@ -69,15 +67,10 @@ namespace Lab_4___Powers_Table
         {
             SetOutputColor();
 
-            // string square, cube;
-
-            Console.WriteLine("\n\n  {0:15}      {1,15}       {2,15}", "number", "square", "cube");
+            Console.WriteLine("\n\n  {0,15}      {1,15}       {2,15}", "number", "square", "cube");
             for (int i = 1; i <= UserInt; i++)
             {
-                //square = (i * i).ToString();
-                //cube = (i * i * i).ToString();
-                //Console.WriteLine("      {0:15}      {1,15}       {2,15}", i.ToString(), square, cube);
-                Console.WriteLine("      {0:15}      {1,15}       {2,15}", i, i*i, i*i*i);
+                Console.WriteLine("      {0,15}      {1,15}       {2,15}", i, Square(i), Cube(i));
             }
             Console.WriteLine("\n\n");
         }
@@ -90,6 +83,16 @@ namespace Lab_4___Powers_Table
                 userChoice = GetUserInput("Please enter 'y' or 'n'.  Would you like to run again? [y/n] ");
             }
             return userChoice;
+        }
+
+        public static int Square(int num)
+        {
+            return num * num;
+        }
+
+        public static int Cube(int num)
+        {
+            return num * num * num;
         }
     }
 }
